@@ -1,0 +1,89 @@
+/* ===================================
+    08. Footer Styles
+====================================== */
+
+.footer-top {
+  padding: 80px 0px;
+}
+
+.footer-bottom {
+  padding: 30px 0px;
+  a:hover {
+    color: $primaryColor;
+  }
+}
+
+.footer-social a {
+  display: inline-block;
+  margin: 0 25px;
+  &:first-child {
+    margin-left: 0;
+  }
+  i {
+    color: $darkGgray;
+    font-size: 22px;
+  }
+  &:hover i {
+    color: $baseColor;
+  }
+}
+
+.back-to-top {
+  background: $baseColor;
+  position: fixed;
+  z-index: 1000;
+  right: 25px;
+  bottom: 15px;
+  width: 40px;
+  height: 40px;
+  margin: 0;
+  opacity: 0;
+  filter: alpha(opacity = 0);
+  -webkit-transition: opacity 350ms;
+  -o-transition: opacity 350ms;
+  transition: opacity 350ms;
+  i {
+    position: absolute;
+    left: 50%;
+    top: 45%;
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    color: $primaryColor;
+    font-size: 24px;
+  }
+  &:hover {
+    background: $baseColor !important;
+  }
+  &.reveal {
+    cursor: pointer;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -ms-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+    opacity: 1;
+    filter: alpha(opacity = 100);
+    &:focus, &:hover, &:active {
+      opacity: 1;
+      filter: alpha(opacity = 100);
+    }
+  }
+}
+
+/* Responsive CSS */
+@media (max-width: 991.98px) {
+  .footer-social a {
+    margin: 0 15px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .footer-top {
+    padding: 55px 0;
+  }
+  .footer-social a {
+    margin: 0 10px;
+  }
+}

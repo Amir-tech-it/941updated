@@ -1,0 +1,42 @@
+$mainfont: 'Roboto', sans-serif;
+$altfont: 'Montserrat', sans-serif;
+$fontawsome: 'Font Awesome 5 Free';
+$fontawsomebrand: 'Font Awesome 5 Brands';
+
+$baseColor: #222;
+$primaryColor: #fff;
+$blackColor: #000;
+$grayColor: #d5d5d5;
+$textbaseColor: #6f6f6f;
+$inputBorder: #d1d1d1;
+$inputBorderFocus: #585858;
+$mediumGray: #dbdbdb;
+$extradarkGray: #232323;
+$darkGgray: #626262;
+$doubledarkGray: #1c1c1c;
+$extramediumGray: #757575;
+$mediumdarkGray: #939393;
+$mediumlightGray: #ededed;
+$lightGray: #d6d5d5;
+$extralightGray: #f0f0f0; 
+$verylightGray: #f7f7f7;
+$extraverylightGray: #fafafa;
+$disablGray: #999;
+$redColor: #ee2323;
+$greenColor: #1a940a;
+
+
+$gradientColorTenhalfBase: linear-gradient(to bottom,$baseColor 0%,$baseColor 10%,$baseColor 10%,#f7f7f7 10%,#f7f7f7 100%);
+$gradientColorTwentyhalfBase: linear-gradient(to bottom,$baseColor 0%,$baseColor 20%,$baseColor 20%,#f7f7f7 20%,#f7f7f7 100%);
+$gradientColorThirtyhalfBase: linear-gradient(to bottom,$baseColor 0%,$baseColor 30%,$baseColor 30%,#f7f7f7 30%,#f7f7f7 100%);
+$gradientColorFourtyhalfBase: linear-gradient(to bottom,$baseColor 0%,$baseColor 40%,$baseColor 40%,#f7f7f7 40%,#f7f7f7 100%);
+$gradientColorFiftyhalfBase: linear-gradient(to bottom,$baseColor 0%,$baseColor 50%,$baseColor 50%,#f7f7f7 50%,#f7f7f7 100%);
+$gradientColorSixtyhalfBase: linear-gradient(to bottom,$baseColor 0%,$baseColor 60%,$baseColor 60%,#f7f7f7 60%,#f7f7f7 100%);
+
+$gradientColorTenhalfPrimary: linear-gradient(to bottom,$primaryColor 0%,$primaryColor 10%,$primaryColor 10%,$baseColor 10%,$baseColor 100%);
+$gradientColorTwentyhalfPrimary: linear-gradient(to bottom,$primaryColor 0%,$primaryColor 20%,$primaryColor 20%,$baseColor 20%,$baseColor 100%);
+$gradientColorThirtyPrimary: linear-gradient(to bottom,$primaryColor 0%,$primaryColor 30%,$primaryColor 30%,$baseColor 30%,$baseColor 100%);
+$gradientColorFourtyhalfPrimary: linear-gradient(to bottom,$primaryColor 0%,$primaryColor 40%,$primaryColor 40%,$baseColor 40%,$baseColor 100%);
+$gradientColorFiftyhalfPrimary: linear-gradient(to bottom,$primaryColor 0%,$primaryColor 50%,$primaryColor 30%,$baseColor 50%,$baseColor 100%);
+$gradientColorSixtyhalfPrimary: linear-gradient(to bottom,$primaryColor 0%,$primaryColor 60%,$primaryColor 60%,$baseColor 60%,$baseColor 100%);
+

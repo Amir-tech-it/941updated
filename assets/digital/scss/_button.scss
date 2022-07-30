@@ -1,0 +1,160 @@
+/* ===================================
+    05. Button Styles
+====================================== */
+
+.btn {
+  display: inline-block;
+  border: 3px solid transparent;
+  line-height: inherit;
+  text-transform: uppercase;
+  &.btn-very-small {
+    font-size: 9px;
+    padding: 1px 17px;
+    line-height: 22px;
+  }
+  &.btn-small {
+    font-size: 11px;
+    padding: 4px 24px;
+  }
+  &.btn-medium {
+    font-size: 12px;
+    padding: 12px 25px 11px;
+  }
+  &.btn-large {
+    font-size: 13px;
+    padding: 9px 34px;
+    line-height: 25px;
+  }
+  &.btn-extra-large {
+    font-size: 15px;
+    padding: 12px 40px 13px;
+    line-height: 25px;
+  }
+}
+
+.btn-dual .btn {
+  margin: 0 10px;
+}
+
+.btn {
+  padding: 20px 10px;
+  border-radius: 0;
+  width: auto;
+  letter-spacing: .5px;
+  font-family: $altfont;
+  min-width: 200px;
+  background-color: $baseColor;
+  display: inline-block;
+  font-size: 18px;
+  line-height: 26px;
+  color: $primaryColor;
+  font-weight: 800;
+  text-transform: uppercase;
+  position: relative;
+  text-align: center;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in-out;
+  i {
+    margin-left: 6px;
+    vertical-align: middle;
+    position: relative;
+    top: -1px;
+  }
+  &:hover, &:active {
+    background-color: $primaryColor !important;
+    color: $baseColor;
+    border: 3px solid $baseColor;
+  }
+  &:hover:after, &:active:after {
+    border-color: $baseColor !important;
+  }
+  &:focus {
+    background-color: $primaryColor !important;
+    color: $baseColor;
+    box-shadow: none !important;
+    border: 3px solid $baseColor;
+    &:after {
+      border-color: $baseColor !important;
+    }
+  }
+  &:after {
+    display: block;
+    content: "";
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    border-top: 3px solid $primaryColor !important;
+    border-right: 3px solid $primaryColor !important;
+    transition: all 0.5s ease 0s;
+    -webkit-transition: all 0.5s ease 0s;
+  }
+  &.min-width-auto {
+    min-width: auto;
+  }
+}
+
+.btn-primary {
+  background-color: $primaryColor !important;
+  border-color: $baseColor;
+  color: $baseColor;
+  &:hover, &:active, &.active:not(:disabled):not(.disabled) {
+    background-color: $baseColor !important;
+    color: $primaryColor !important;
+    border-color: $baseColor !important;
+  }
+  &:hover:after, &:active:after {
+    border-color: $primaryColor !important;
+  }
+  &:focus {
+    background-color: $baseColor !important;
+    color: $primaryColor !important;
+    box-shadow: none !important;
+    border-color: $baseColor;
+    &:after {
+      border-color: $primaryColor !important;
+    }
+  }
+  &:after {
+    border-top: 3px solid $baseColor !important;
+    border-right: 3px solid $baseColor !important;
+  }
+}
+
+.border-hover {
+  border: 3px solid transparent;
+}
+
+.border-primary {
+  border: 3px solid $primaryColor !important;
+  &:hover, &:active, &.active:not(:disabled):not(.disabled) {
+    color: $primaryColor !important;
+    border-color: $primaryColor !important;    
+  }
+}
+
+/* Responsive CSS */
+@media (max-width: 767.98px) {
+  .btn {
+    padding: 15px 10px;
+    &.xs-btn-small {
+      font-size: 11px;
+      padding: 4px 24px;
+    }
+    &.xs-btn-medium {
+      font-size: 12px;
+      padding: 12px 25px 11px;
+    }
+    &.xs-btn-large {
+      font-size: 13px;
+      padding: 9px 34px;
+      line-height: 25px;
+    }
+    &.xs-btn-extra-large {
+      font-size: 15px;
+      padding: 12px 40px 13px;
+      line-height: 25px;
+    }
+  }
+}

@@ -1,0 +1,93 @@
+/* ===================================
+    07. Blog Styles
+====================================== */
+
+/* aside style */
+.aside-title {
+  position: relative;
+  overflow: hidden;
+  border-bottom: 1px solid $baseColor;
+  padding-bottom: 10px;
+}
+
+.aside-style {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  li {
+    position: relative;
+    padding: 0 0 0 12px;
+    margin: 0 0 9px 0;
+    &:before {
+      content: "";
+      width: 5px;
+      height: 1px;
+      background-color: $baseColor;
+      position: absolute;
+      top: 12px;
+      left: 0;
+    }
+  }
+}
+
+.aside-social li {
+  margin-right: 15px;
+  display: inline-block;
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+/* tag cloud */
+.tag-cloud a {
+  font-size: 10px;
+  padding: 3px 8px;
+  border: 1px solid $mediumGray;
+  margin: 0 8px 8px 0;
+  display: inline-block;
+  text-transform: uppercase;
+  color: $extradarkGray;
+  line-height: 18px;
+  &:hover {
+    background: $extradarkGray;
+    color: $primaryColor !important;
+    border: 1px solid $extradarkGray;
+  }
+}
+
+/* blog comment */
+.blog-comment {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  li {
+    padding: 50px 0;
+    border-bottom: 1px solid $mediumlightGray;
+    position: relative;
+    .btn-reply {
+      float: right;
+      border: 1px solid $mediumlightGray;
+      padding: 0 8px;
+      font-size: 10px;
+      font-weight: 600;
+      position: relative;
+    }
+    > li:first-child {
+      padding-top: 0;
+    }
+    &:last-child {
+      border-bottom: none;
+      padding-bottom: 0;
+    }
+    ul.child-comment {
+      margin-left: 40px;
+      list-style: none;
+      li {
+        border: none;
+        padding-bottom: 0;
+        border-top: 1px solid $mediumlightGray;
+        margin-top: 50px;
+      }
+    }
+  }
+}

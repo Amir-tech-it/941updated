@@ -1,0 +1,58 @@
+/* ----------------------------------
+
+Theme Name: Black Digital - Creative Multipurpose Agency Template
+Author: Chitrakoot Web
+Description: Black Digital is a highly creative, modern, and bootstrap responsive multipurpose agency HTML5 template
+Tags: creative, modern, digital agency, digital marketing, digital marketing agency, business, clean, corporate, bootstrap responsive, bootstrap 4.0, saas, web agency, comingsoon
+Name: style.css
+Version: 1.0
+
+-------------------------------------
+
+@Default Styles
+        
+    01. Predefine
+	    	01. Reset
+		    02. Typography
+		    03. Background color
+		    04. Custom
+		    05. Border
+		    06. Background image
+		    07. Margin
+		    08. Padding
+		    09. Display
+		    10. Position
+		    11. Width
+		    12. Height
+		    13. Icon
+		    14. Page title
+    02. Header
+    03. Banner
+    04. Feature
+    05. Button
+    06. Portfolio
+    07. Blog
+    08. Footer
+    09. Animation
+
+*/
+
+@import "variables";
+
+@import "predefine";
+
+@import "header";
+
+@import "banner";
+
+@import "feature";
+
+@import "button";
+
+@import "portfolio";
+
+@import "blog";
+
+@import "footer";
+
+@import "animation";

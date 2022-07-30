@@ -1,0 +1,181 @@
+/* ===================================
+    03. Banner Styles
+====================================== */
+
+.home-banner .banner-desc {
+  top: 76px;
+}
+
+.banner-desc h1 {
+  font-size: 42px;
+  line-height: 44px;
+}
+
+.home-banner .banner-btn {
+  right: -200px;
+  .btn-primary, .btn-base {
+    display: block;
+  }
+  .btn-primary {
+    border-top: transparent;
+  }
+}
+
+.full-banner-vertical {
+  overflow: hidden;
+  img {
+    width: auto;
+    height: 100%;
+    max-width: none;
+  }
+}
+
+.full-banner-horizontal {
+  overflow: hidden;
+  img {
+    width: 100%;
+    height: auto;
+    max-width: none;
+  }
+}
+
+/* Home Slider Banner */
+.home-slider-banner.owl-carousel {
+  .owl-nav {
+    .owl-next {
+      right: 0;
+    }
+    .owl-prev {
+      left: 0;
+    }
+    .owl-next, .owl-prev {
+      width: 40px;
+      height: 90px;
+      background: $primaryColor;
+      margin-top: -45px;
+    }
+    .owl-next:hover, .owl-prev:hover {
+      opacity: 0.65;
+    }
+  }
+  .owl-dots {
+    bottom: 20px;
+    left: 0;
+    position: absolute;
+    right: 0;
+    margin: 0;
+  }
+}
+
+/* Type Slider Banner */
+.home-type-banner h1 {
+  color: $baseColor;
+  font-size: 58px;
+  line-height: 58px;
+}
+
+.banner-title {
+  &:after {
+    background: $primaryColor;
+    content: "";
+    height: 2px;
+    position: absolute;
+    right: 20px;
+    top: 48%;
+    width: 15px;
+  }
+  &:before {
+    background: $primaryColor;
+    content: "";
+    height: 2px;
+    left: 20px;
+    position: absolute;
+    top: 48%;
+    width: 15px;
+  }
+}
+
+/* Responsive CSS */
+@media (max-width: 1199.98px) {
+  .banner-desc h1 {
+    font-size: 36px;
+    line-height: 42px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .home-banner {
+    > .position-absolute {
+      padding: 0 15px;
+    }
+    .banner-desc {
+      text-align: center;
+      margin-top: -230px;
+      top: 0;
+    }
+    .banner-btn {
+      position: static !important;
+      .btn-primary {
+        border-top: 3px solid;
+        border-color: $baseColor;
+      }
+    }
+  }
+  .inner-banner {
+    > .position-absolute {
+      position: static !important;
+      float: left;
+      text-align: center;
+      background: none !important;
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+    .vertical-middle {
+      background-color: rgba(255, 255, 255, 0.85) !important;
+      position: static !important;
+      -webkit-transform: translateY(0%);
+      -ms-transform: translateY(0%);
+      transform: translateY(0%);
+      -moz-transform: translateY(0%);
+      -o-transform: translateY(0%);
+    }
+  }
+  .home-slider-banner {
+    .owl-nav, .owl-dots {
+      display: none;
+    }
+    .banner-desc h1 {
+      font-size: 28px;
+      line-height: 32px;
+    }
+  }
+  .sm-full-banner img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .home-banner .banner-desc {
+    margin-top: -50px;
+  }
+  .banner-desc {
+    h1 {
+      font-size: 22px;
+      line-height: 28px;
+    }
+    .text-medium {
+      font-size: 14px;
+      line-height: 24px;
+    }
+  }
+  .home-slider-banner {
+    .banner-desc h1 {
+      font-size: 18px;
+      line-height: 22px;
+    }
+    .square-title {
+      padding: 5px;
+    }
+  }
+}
